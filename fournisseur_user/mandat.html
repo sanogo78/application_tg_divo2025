@@ -1,0 +1,51 @@
+<!-- cette page pour liste les mandats des forunisseurs -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mandat.css">
+    <title>mandats</title>
+ </head>
+ <body>
+    <h2>Liste des Mandats Déposés</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID Mandat</th>
+                <th>Date Dépôt</th>
+                <th>Date Réception Trésor</th>
+                <th>État</th>
+                <th>Erreurs</th>
+                <th>Notifications</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MAND-00123</td>
+                <td>05/09/2025</td>
+                <td>07/09/2025</td>
+                <td class="success">Pris en charge</td>
+                <td>Aucune</td>
+                <td>Email / SMS envoyés</td>
+                <td><a href="details_mandat.html?id=00123" class="btn">Voir détails</a></td>
+            </tr>
+            <tr>
+                <td>MAND-00124</td>
+                <td>06/09/2025</td>
+                <td>08/09/2025</td>
+                <td class="error">Erreur</td>
+                <td>Code fournisseur invalide</td>
+                <td>Email envoyé / SMS non envoyé</td>
+                <td><a href="details_mandat.html?id=00124" class="btn">Voir détails</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <p>Divo © 2025 Commune de Sanogo — Tous droits réservés</p>
+    </footer>
+ </body>
+ </html>

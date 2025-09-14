@@ -1,0 +1,75 @@
+/* Style for User Profile and Admin Dashboard */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .profil-container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2, h3 {
+            text-align: center;
+        }
+
+        .profil-info img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .profil-info p {
+            margin: 8px 0;
+        }
+
+        .profil-actions, .admin-actions {
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        .profil-actions button,
+        .admin-actions button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .profil-actions button:hover,
+        .admin-actions button:hover {
+            background-color: #0056b3;
+        }
+
+        .admin-actions ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .admin-actions li {
+            margin: 10px 0;
+        }
+
+        .admin-actions a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .admin-actions a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #666;
+        }

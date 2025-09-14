@@ -1,0 +1,39 @@
+<!-- interface fournisseur pour poser des questions -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fournisseur.css">
+    <title>Question des fournisseurs</title>
+ </head>
+ <body>
+    <h2>Poser une Question sur un Mandat</h2>
+
+<div class="question-form">
+    <form>
+        <label for="mandat">Sélectionnez un mandat :</label>
+        <select id="mandat" name="mandat">
+            <option value="">-- Choisir un mandat --</option>
+            <option value="MAND-00123">MAND-00123</option>
+            <option value="MAND-00124">MAND-00124</option>
+        </select>
+
+        <label for="nom">Nom du fournisseur :</label>
+        <input type="text" id="nom" name="nom" placeholder="Nom complet" />
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Adresse email" />
+
+        <label for="question">Question :</label>
+        <textarea id="question" name="question" placeholder="Votre question..."></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+
+<footer>
+    <p>Divo © 2025 Commune de Sanogo — Tous droits réservés</p>
+</footer>
+ </body>
+ </html>
