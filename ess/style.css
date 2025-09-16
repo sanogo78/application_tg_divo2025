@@ -1,0 +1,21 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+
+
+body{ 
+	margin:0; 
+  padding:0;
+  height: 100vh;
+  color: black;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  height: 100%;
+  background-color: #f00c0c;
+
+}

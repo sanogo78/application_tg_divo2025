@@ -4,16 +4,6 @@ body {
     line-height: 1.6;
 }
 
-footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
 
 /* NAVIGATION */
 nav {

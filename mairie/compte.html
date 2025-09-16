@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <title>espace de la mairie</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="compte.html">Mon Compte</a></li>
+                <li><a href="send_mandat.html">Les mandats envoyés à la trésorerie générale de DIVO</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact_mairie.html">Contact</a></li>
+                <li><a href="../accueil.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+        <h1>Bienvenue dans votre espace mairie</h1>
+         <hr>
+            <!-- Contenu principal de la page -->
+            <main>
+                <h1>Gestion des mandats</h1>
+                <form action="envoifichier" id="envoiForm" method="POST" enctype="multipart/form-data">
+                    <label for="fichier">Selectionnez le fichier excel à Envoyer :</label>
+                    <input type="file" id="fichier" name="fichier" accept=".xls,.xlsx" required><br>
+                    <span class="error" id="fichierError">Veillez Selectionnez un fichier valide.</span>
+
+                    <label for="destinataire" >Service destinataire :</label>
+                    <select id="destinataire" name="destinataire" required><br>
+                        <option value="">--Sélectionnez un service--</option>
+                        <option value="service1">Service communal</option>
+                        <option value="service2">Service Recouvrement</option>
+                        <option value="service3">Service Depense</option>
+                        <option value="service3">Service Qualité</option>
+                    </select>
+                    <label for="titre">Titre du fichier :</label>
+                    <input type="text" id="titre" name="titre" placeholder="Titre du fichier" required><br>
+
+                    <label for="date">Date de reference du fichier :</label>
+                    <input type="date" id="date" name="date" required><br>
+
+                    <label for="reference">Numéro de réference :</label>
+                    <input type="text" id="reference" name="reference" placeholder="Numéro de réference" required><br>
+
+                    <label for="description">Description du fichier :</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Description du fichier" required></textarea><br>
+                    
+                    <button type="submit">Envoyer le fichier</button>
+                </form>
+
+                <!-- Ajoutez plus de contenu selon vos besoins -->
+            </main>
+            <hr>
+            <!-- Inclure le pied de page -->
+
+    </header>
+    <script>scr="../js/mairie.js" </script>
+</body>
+</html>
