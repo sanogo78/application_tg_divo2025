@@ -1,122 +1,86 @@
 /* PAGE TRAITEMENT */
-#traitement {
-    max-width: 900px;
-    margin: 100px auto 40px auto;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-    padding: 40px 30px 30px 30px;
-}
-
-#traitement h2 {
-    font-size: 2em;
-    color: #006d77;
-    margin-bottom: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-#traitement p {
-    font-size: 1.1em;
-    color: #444;
-    margin-bottom: 18px;
-    line-height: 1.7;
-}
-
-#traitement .mandat-list {
-    margin: 30px 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: center;
-}
-
-#traitement .mandat-list li {
-    background: #83c5be;
-    color: #222;
-    padding: 18px 28px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    font-size: 1.1em;
-    min-width: 180px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    text-align: center;
-}
-
-#traitement .mandat-list li strong {
-    color: #006d77;
-    font-weight: bold;
-}
-
-@media (max-width: 700px) {
-    #traitement {
-        padding: 20px 8px;
-    }
-    #traitement .mandat-list {
-        flex-direction: column;
-        gap: 12px;
-    }
-    #traitement .mandat-list li {
-        min-width: unset;
-        width: 90%;
-        margin: 0 auto;
-    }
-}
-/* classons les etapes côte à côte */
-.etapes {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 40px 0;
-    flex-wrap: wrap;
-}
-
-.etape {
-    background: #f7fafc;
-    border-radius: 14px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    padding: 24px 18px;
-    text-align: center;
-    width: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.etape img {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 18px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-    background: #fff;
-}
-
-.etape h3 {
-    font-size: 1.15em;
-    color: #006d77;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.etape p {
-    font-size: 1em;
-    color: #444;
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
-@media (max-width: 700px) {
-    .etapes {
-        flex-direction: column;
-        gap: 18px;
-        align-items: center;
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    justify-self: unset;
+}
+.container h2 {
+    text-align: center;
+    color: #0d0e0d;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+}
+.container p {
+    color: #555555;
+    font-size: 18px;
+    margin : 10px 5px 10px 5px;
+}
+.container .card-body h5{
+    text-align: center;
+    color: #333333;
+    margin-top: 10px;
+    font-size: larger;
+    font-family: 'Gill Sans';
+    font-weight: bold;
+
+}
+.container .card-body .card-text{
+    text-transform: lowercase;
+
+}
+.container .col{
+    margin-top: 50px;
+}
+.card-body{
+    /* border-radius: 50px; */
+    box-shadow: 0 4px 8px rgba(253, 4, 4, 0.1);
+    padding: 20px;
+    background-color: #fdd6a3;
+    transition: transform 0.2s;
+}
+.card-body:hover {
+    transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
     }
-    .etape {
-        width: 90%;
+    .container h2 {
+        font-size: 36px;
     }
+    .container p {
+        font-size: 16px;
+    }
+    .container .card-body h5 {
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .container .card-body .card-text {
+        font-size: 14px;
+    }
+    .container .col {
+        margin-top: 20px;
+    }
+}
+.card-img-top {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-bottom: 3px;
+    margin-top: auto;
+    height: 300px;
+    object-fit: cover;
+}
+.card{
+    border-radius: 10px;
 }

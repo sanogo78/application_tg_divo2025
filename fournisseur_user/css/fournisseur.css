@@ -5,10 +5,11 @@ body {
 
         h2 {
             text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         .question-form {
-            background-color: #f9f9f9;
+            background-color: #f5ecd3;
             padding: 20px;
             max-width: 600px;
             margin: auto;
@@ -27,7 +28,7 @@ body {
         button {
             margin-top: 15px;
             padding: 10px 20px;
-            background-color: #007bff;
+            background-color: #184aee;
             color: white;
             border: none;
             border-radius: 5px;
@@ -35,10 +36,4 @@ body {
 
         button:hover {
             background-color: #0056b3;
-        }
-
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            color: #666;
         }

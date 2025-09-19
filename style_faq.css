@@ -1,0 +1,125 @@
+
+/* SECTION FAQ */
+#faq {
+    max-width: 900px;
+    margin: 100px auto 40px auto;
+    background: #fcfbf7;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 40px 30px 30px 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#faq h2 {
+    font-size: 3em;
+    color: #50fc01;
+    margin-bottom: 24px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.pi{
+    text-align: center;
+    color: #f88705;
+    margin-bottom: 36px;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 36px;
+}
+
+.faq-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 22px 24px;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.faq-item:hover {
+    box-shadow: 0 6px 18px rgba(0,109,119,0.13);
+}
+
+.faq-question {
+    font-weight: bold;
+    color: #006d77;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.faq-answer {
+    color: #444;
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Formulaire de question */
+#faq form {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px 20px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+#faq label {
+    font-weight: 500;
+    color: #006d77;
+}
+
+#faq input[type="text"],
+#faq textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #83c5be;
+    border-radius: 6px;
+    font-size: 1em;
+    background: #f7fafc;
+    color: #222;
+    margin-bottom: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#faq button[type="submit"] {
+    background: #32f302;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#faq button[type="submit"]:hover {
+    background: #83c5be;
+    color: #222;
+}
+
+#confirmation {
+    color: #2d6a4f;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    #faq {
+        padding: 20px 8px;
+    }
+    .faq-item, #faq form {
+        padding: 16px 8px;
+    }
+}
